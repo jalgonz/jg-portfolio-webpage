@@ -1,0 +1,13 @@
+:root {
+    --leaf: #c3e8bd;
+    --black: #040403;
+    --ivy: #31664e;
+    --jade: #8fcb9b;
+    --clay: #8f8073;
+}
+
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: var(--ivy);
+    background-color: var(--leaf);
+}

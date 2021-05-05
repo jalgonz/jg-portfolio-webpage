@@ -1,13 +1,12 @@
 :root {
-    --leaf: #c3e8bd;
-    --black: #040403;
-    --ivy: #31664e;
-    --jade: #8fcb9b;
-    --clay: #8f8073;
+    --citrus: #F79256;
+    --peach: #FBD1A2;
+    --foam: #7DCFB6;
+    --sea: #00B2CA;
+    --deep: #1D4E89;
 }
 
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    color: var(--ivy);
-    background-color: var(--leaf);
 }
+

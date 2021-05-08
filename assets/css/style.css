@@ -1,13 +1,36 @@
 :root {
-    --citrus: #F79256;
-    --peach: #FBD1A2;
-    --foam: #7DCFB6;
-    --sea: #00B2CA;
-    --deep: #1D4E89;
+    --ash: #B5C2B7;
+    --grey: #adb7d4;
+    --grape: #7c5a88;
+    --plum: #523a5c;
+    --deep: #2D2327;
 }
 
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    background-color: var(--foam);
+    color: var(--deep);
+    background-color: var(--grey);
+    line-height: 2;
 }
 
+header {
+    background-color: var(--plum);
+}
+header h1 {
+    color: var(--plum);
+    background-color: var(--grey);
+    margin: 0;
+    font-size: 5vw;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--grey);
+    background-color: var(--grape);
+} 

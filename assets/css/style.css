@@ -1,36 +1,54 @@
+/* Color pallete */
 :root {
-    --ash: #B5C2B7;
-    --grey: #adb7d4;
-    --grape: #7c5a88;
-    --plum: #523a5c;
-    --deep: #2D2327;
+    --bone: #E6E8E6; 
+    --ash: #CED0CE;
+    --jade: #9FB8AD;
+    --ivy: #475841;
+    --onyx: #3F403F;
 }
 
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    color: var(--deep);
-    background-color: var(--grey);
+    color: var();
+    background-color: var(--bone);
     line-height: 2;
+}
+a {
+    text-decoration: none;
 }
 
 header {
-    background-color: var(--plum);
+    background-color: var();
+    align-items: center;
 }
+
 header h1 {
-    color: var(--plum);
-    background-color: var(--grey);
+    color: var();
+    background-color: var();
     margin: 0;
-    font-size: 5vw;
+    font-size: 6vw;
+    line-height: 1.5;
     text-align: center;
 }
+
+/* Style for the Nav Bar */
+
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px var(--ivy);
+    background-color: var(--onyx);
 }
+
 nav a {
-    text-decoration: none;
     padding: 10px 20px;
-    color: var(--grey);
-    background-color: var(--grape);
+    color: var(--bone);
+    background-color: var();
+    font-size: 3vw;
 } 
+
+section {
+
+}

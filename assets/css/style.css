@@ -29,6 +29,7 @@ header h1 {
 
 /* Style for the Nav Bar */
 nav {
+    background-color: var(--onyx);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,9 +41,30 @@ nav {
 }
 
 nav a {
+    color: var(--bone);
     display: flex;
 }
-
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-item {
+    border: 10px solid;
+    margin: 20px;
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    flex-basis: 45%;
+    align-items:flex-end;
+    background-size: 125%;
+    background-repeat: no-repeat;
+}
+/* First app image larger than all the rest */
+.work-item:first-child {
+    min-height: 400px;
+    flex-basis: 92%;
+}
 /* Images for portfolio */
 .surf-report {
     background-image: url("../images/surf-report.jpg");

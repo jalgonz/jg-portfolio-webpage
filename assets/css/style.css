@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Color pallete */
 :root {
     --bone: #E6E8E6; 
@@ -9,46 +14,48 @@
 
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    color: var();
-    background-color: var(--bone);
     line-height: 2;
 }
+
 a {
     text-decoration: none;
 }
 
-header {
-    background-color: var();
-    align-items: center;
-}
-
 header h1 {
-    color: var();
-    background-color: var();
-    margin: 0;
-    font-size: 6vw;
-    line-height: 1.5;
-    text-align: center;
+    padding-top: 5%;
+    padding-left: 3%;
+    font-size: 5vw;
 }
 
 /* Style for the Nav Bar */
-
 nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-shadow: 2px 2px 12px var(--ivy);
-    background-color: var(--onyx);
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 3%;
+    font-size: 2vw;
 }
 
 nav a {
-    padding: 10px 20px;
-    color: var(--bone);
-    background-color: var();
-    font-size: 3vw;
-} 
+    display: flex;
+}
 
-section {
-
+/* Images for portfolio */
+.surf-report {
+    background-image: url("../images/surf-report.jpg");
+}
+.led-wall {
+    background-image: url("../images/led-wall.jpg");
+}
+.calculator {
+    background-image: url("../images/calculator.jpg");
+}
+.pastel-puzzle {
+    background-image: url("../images/pastel-puzzle.jpg");
+}
+.run-buddy {
+    background-image: url("../images/run-buddy.jpg");
 }

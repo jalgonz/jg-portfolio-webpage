@@ -12,6 +12,10 @@
     --onyx: #3F403F;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     line-height: 2;
@@ -37,12 +41,19 @@ nav {
     top: 0;
     width: 100%;
     padding: 0px 3%;
-    font-size: 1.5vw;
+    font-size: 30px;
 }
 
 nav a {
     color: var(--bone);
     display: flex;
+}
+
+.section-style1 {
+    padding: 2.5% 5%;
+    color: var();
+    background-color: var(--jade);
+    line-height: 1.5;
 }
 .work-container {
     display: flex;
@@ -96,4 +107,29 @@ nav a {
 }
 .run-buddy {
     background-image: url("../images/run-buddy.jpg");
+}
+
+/* Contact me */
+.section-style1 address {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-style1 address a {
+    color: var(--onyx);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 768px) {
+    .work-item,
+    .work-item:first-child {
+        flex-basis: 100%;
+        min-height: 200px;
+    }
 }

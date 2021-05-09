@@ -13,8 +13,9 @@
 }
 
 h2 {
+    padding-bottom: 5%;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -50,10 +51,14 @@ nav a {
 }
 
 .section-style1 {
-    padding: 2.5% 5%;
+    padding: 5% 5%;
     color: var();
     background-color: var(--jade);
     line-height: 1.5;
+}
+
+.section-style2 {
+    padding: 5% 5%;
 }
 .work-container {
     display: flex;
@@ -125,11 +130,32 @@ nav a {
     font-style: normal;
 }
 
-/* Responsive layout for mobile */
+/* Responsive layout for mobile and smaller screens */
+@media screen and (max-width: 980px) {
+    header {
+        padding: 5% 0;
+    }
+    header h1 {
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 3%;
+        font-size: 8vw;
+    }
+    
+}
 @media screen and (max-width: 768px) {
+    header h1 {
+        padding-top: 10%;
+        font-size: 10vw;
+    }
+
     .work-item,
     .work-item:first-child {
         flex-basis: 100%;
         min-height: 200px;
+    }
+
+    .section-style1 address {
+        flex-direction: column;
     }
 }
